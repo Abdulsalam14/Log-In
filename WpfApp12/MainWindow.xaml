@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApp12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp12"
+        mc:Ignorable="d"
+        Title="Log In" Height="550" Width="400">
+    <Grid Height="510" Width="383"  Background="#0e8c6f"  >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.8*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Source="https://cdn-icons-png.flaticon.com/512/149/149071.png" Margin="20"></Image>
+        <StackPanel Grid.Row="1" Width="300" Margin="20">
+            <Grid Background="Transparent" Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition  Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Source="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"></Image>
+                <TextBlock Text="Username" Height="24" Width="100" FontSize="20" FontWeight="SemiBold"  HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="30,0" Grid.ColumnSpan="2" />
+                <TextBox Grid.Column="2" Height="24" VerticalAlignment="Center" Name="txtbx1" ></TextBox>
+            </Grid>
+            <Grid Background="Transparent" Height="40" Margin="0,30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Source="https://cdn-icons-png.flaticon.com/128/2889/2889676.png"></Image>
+                <TextBlock Text="Password" Height="24" Width="100" FontSize="20" FontWeight="SemiBold" HorizontalAlignment="Center"  VerticalAlignment="Center" Margin="30,0" Grid.ColumnSpan="2" />
+                <TextBox Grid.Column="2" Height="24" VerticalAlignment="Center" Name="txtbx2" ></TextBox>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Width="300" >
+            <Button Height="50"  Content="Log In" FontSize="25" Background= "#004935" Foreground="White" Name="btn1" Click="Button_Click"></Button>
+            <Button Height="50"  Margin="0,30" Content="Registration" FontSize="25" Background="#004935" Foreground="White" BorderThickness="0" Click="Button_Click_1" ></Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
